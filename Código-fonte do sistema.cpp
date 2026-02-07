@@ -74,7 +74,7 @@ static const char mqtt_ca_cert[] =
 "-----END CERTIFICATE-----\n";
 
 // ============================================================================
-// DRIVERS DOS SENSORES (EMBUTIDOS)
+// DRIVERS DOS SENSORES 
 // ============================================================================
 
 // --- BME280 ---
@@ -97,7 +97,7 @@ bool bme280_init(i2c_inst_t *i2c, uint8_t addr) {
     i2c_write_blocking(i2c, addr, data, 2, false);
     sleep_ms(10);
     
-    // Calibração (simplificada para exemplo)
+    // Calibração 
     bme280_calib.dig_T1 = 27504; bme280_calib.dig_T2 = 26435; bme280_calib.dig_T3 = 1000;
     bme280_calib.dig_H1 = 75; bme280_calib.dig_H2 = 363; bme280_calib.dig_H3 = 0;
     bme280_calib.dig_H4 = 328; bme280_calib.dig_H5 = 50; bme280_calib.dig_H6 = 30;
@@ -674,5 +674,6 @@ int main() {
     
     return 0;
 }
+
 
 
