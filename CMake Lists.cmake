@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.13)
+cmake
 
 include(pico_sdk_import.cmake)
 
@@ -55,4 +55,5 @@ target_compile_options(estacao_meteo_iot PRIVATE
     -Os
     -Wno-unused-parameter
     -Wno-unused-variable
+
 ) 
