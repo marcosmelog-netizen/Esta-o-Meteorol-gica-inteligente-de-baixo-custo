@@ -34,7 +34,7 @@
 #include "mbedtls/debug.h"
 
 // ============================================================================
-// CONFIGURAÇÕES WIFI e MQTT (ALTERE AQUI!)
+// CONFIGURAÇÕES WIFI e MQTT 
 // ============================================================================
 
 #define WIFI_SSID           "CIENTISTA"
@@ -674,4 +674,5 @@ int main() {
     
     return 0;
 }
+
 
